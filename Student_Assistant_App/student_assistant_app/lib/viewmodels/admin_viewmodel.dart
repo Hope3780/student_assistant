@@ -147,12 +147,12 @@ class AdminViewModel extends ChangeNotifier {
       notifyListeners();
     }
   }
-
+=
   // Get statistics
   Map<String, int> getStatistics() {
     return {
       'total': _applications.length,
-      'pending': _applications.where((a) => a.status == 'pending').length,
+      'pending': _applications.where((a) => a.status = 'pending').length,
       'approved': _applications.where((a) => a.status == 'approved').length,
       'rejected': _applications.where((a) => a.status == 'rejected').length,
     };
