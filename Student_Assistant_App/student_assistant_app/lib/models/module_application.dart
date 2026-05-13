@@ -29,7 +29,7 @@ class ModuleApplication {
     );
   }
 
-  Map<String, dynamic> toJson() {
+Map<String, dynamic> toJson() {
     return {
       'id': id,
       'application_id': applicationId,
